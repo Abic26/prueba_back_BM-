@@ -79,7 +79,7 @@ Para configurar PostgreSQL y pgAdmin4, sigue estos pasos:
 ## API Reference
 
 ### Auth
-####Registro de Usuario
+#### Registro de Usuario
 
 ```http
  POST /api/auth/register
