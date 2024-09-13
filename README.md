@@ -111,9 +111,9 @@ PUT /api/users/:id
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |}
 | `id`      | `string` | **Required**. id of the user |
-| `username`      | `string` | **Required**. Email of the user |
-| `password`      | `string` | **Required**. Password of the user |
-| `role`      | `string` | **Required**. role of the user |
+| `username`| `string` | **Required**. Email of the user |
+| `password`| `string` | **Required**. Password of the user |
+| `role`    | `string` | **Required**. role of the user |
 
 #### Eliminar un usuario
 
