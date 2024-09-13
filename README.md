@@ -60,7 +60,7 @@ Para configurar PostgreSQL y pgAdmin4, sigue estos pasos:
 1. Abre pgAdmin4 y conéctate al servidor PostgreSQL.
 2. Crea una nueva base de datos para tu proyecto:
    - Haz clic derecho en el nodo `Databases` y selecciona `Create` > `Database`.
-   - Asigna un nombre a la base de datos (por ejemplo, `prueba_tec_alianza`).
+   - Asigna un nombre a la base de datos (por ejemplo, `prueba_BM`).
    - Haz clic en `Save`.
 
 ### 4. Configurar Sequelize
