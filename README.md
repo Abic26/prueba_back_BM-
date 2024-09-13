@@ -69,10 +69,11 @@ Para configurar PostgreSQL y pgAdmin4, sigue estos pasos:
 
    ```env
    DB_HOST=localhost
-   DB_PORT=5432
-   DB_NAME=prueba_tec_alianza
    DB_USER=postgres
-   DB_PASSWORD=your_postgres_password
+   DB_PASSWORD=1312
+   DB_NAME=admin
+   DB_PORT=5432
+   PORT=5000
 
 
 ## API Reference
