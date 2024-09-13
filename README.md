@@ -1,10 +1,11 @@
 
 # Backend prueba tec. Alianza
 
-Proyecto backend para gestionar y visualizar datos en la base de datos, incluyendo métodos GET, POST, PUT y DELETE. Este proyecto proporciona un sistema de inicio de sesión y registro de usuarios, y permite a los usuarios gestionar y explorar registros de asistencia.
+Proyecto backend para gestionar y visualizar datos en la base de datos, incluyendo métodos GET, POST, PUT y DELETE. Este proyecto proporciona un sistema de inicio de sesión y registro de usuarios, y permite a los usuarios gestionar y explorar registros de asistencia. El proyecto está desarrollado con Node.js, Express, Sequelize, PostgreSQL y pgAdmin4.
 ## Tabla de Contenidos.
 
 - [Instalación](#instalación)
+- [Configuración de PostgreSQL y pgAdmin4](#configuración-de-postgresql-y-pgadmin4)
 - [API Reference](#API)
 - [Contribución](#Contribución)
 - [Créditos](#créditos)
@@ -25,20 +26,53 @@ cd ejemplo/ejemplo
 ```
 3. Instala las dependencias:
 ```sh
-composer update
+npm install
 ```
 4. Abrir el proyecto en el editor de código de preferencia, se recomienda Vsc (Visual Studio Code):
 ```sh
 code .
 ```
-5. migrar el proyecto.
+5. ejecutar el proyecto en modo desarrollo.
 ```sh
-php artisan migrate
+npm run dev
 ```
-6. inicializa el proyecto en local.
+6. inicializa el proyecto en modo produccion.
 ```sh
-php artisan serve
+npm run start
 ```
+
+## Configuración de PostgreSQL y pgAdmin4
+
+Para configurar PostgreSQL y pgAdmin4, sigue estos pasos:
+
+### 1. Instalar PostgreSQL
+
+1. Descarga e instala PostgreSQL desde [su sitio web oficial](https://www.postgresql.org/download/).
+2. Durante la instalación, se te pedirá que configures una contraseña para el usuario `postgres`. Toma nota de esta contraseña, ya que la necesitarás más adelante.
+
+### 2. Instalar pgAdmin4
+
+1. Descarga e instala pgAdmin4 desde [su sitio web oficial](https://www.pgadmin.org/download/).
+2. Una vez instalado, abre pgAdmin4 e inicia sesión con la contraseña del usuario `postgres`.
+
+### 3. Configurar la Base de Datos
+
+1. Abre pgAdmin4 y conéctate al servidor PostgreSQL.
+2. Crea una nueva base de datos para tu proyecto:
+   - Haz clic derecho en el nodo `Databases` y selecciona `Create` > `Database`.
+   - Asigna un nombre a la base de datos (por ejemplo, `prueba_tec_alianza`).
+   - Haz clic en `Save`.
+
+### 4. Configurar Sequelize
+
+1. Crea un archivo `.env` en la raíz de tu proyecto con la configuración de conexión a la base de datos. Aquí hay un ejemplo de cómo debería verse tu archivo `.env`:
+
+   ```env
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=prueba_tec_alianza
+   DB_USER=postgres
+   DB_PASSWORD=your_postgres_password
 
 
 ## API Reference
