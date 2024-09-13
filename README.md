@@ -1,5 +1,5 @@
 
-# Backend prueba tec. Alianza
+# Backend prueba tec. Bull Marketing
 
 Proyecto backend para gestionar y visualizar datos en la base de datos, incluyendo métodos GET, POST, PUT y DELETE. Este proyecto proporciona un sistema de inicio de sesión y registro de usuarios, y permite a los usuarios gestionar y explorar registros de asistencia. El proyecto está desarrollado con Node.js, Express, Sequelize, PostgreSQL y pgAdmin4.
 ## Tabla de Contenidos.
