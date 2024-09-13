@@ -109,11 +109,11 @@ PUT /api/users/:id
 ```
 
 | Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |}
+| :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. id of the user |
-| `username`| `string` | **Required**. Email of the user |
-| `password`| `string` | **Required**. Password of the user |
-| `role`    | `string` | **Required**. role of the user |
+| `username`      | `string` | **Required**. Email of the user |
+| `password`      | `string` | **Required**. Password of the user |
+| `role`      | `string` | **Required**. role of the user |
 
 #### Eliminar un usuario
 
@@ -122,7 +122,7 @@ DELETE /api/users/:id
 ```
 
 | Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |}
+| :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. id of the user for delete |
 
 ### Attendance
@@ -133,7 +133,7 @@ POST /api/attendance/create
 ```
 
 | Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |}
+| :-------- | :------- | :-------------------------------- |
 | `user_id`      | `string` | **Required**. id of the user |
 | `hour`      | `string` | **Required**. hour of the user |
 | `date`      | `string` | **Required**. date of the user |
@@ -145,7 +145,7 @@ GET /api/attendance/user/:user_id
 ```
 
 | Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |}
+| :-------- | :------- | :-------------------------------- |
 | `user_id`      | `string` | **Required**. id of the user |
 
 #### Obtener todos los registros de asistencia
