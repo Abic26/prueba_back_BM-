@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 const attendanceRoutes = require('./routes/attendanceRoutes');
+const userRoutes = require('./routes/userRoutes');
 const sequelize = require('./config/sequelize'); // Importa la configuración de Sequelize
 const User = require('./models/User');
 const Attendance = require('./models/Attendance');
@@ -14,6 +15,7 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/attendance', attendanceRoutes);
+app.use("/api/users", userRoutes);
 
 // Sincronizar los modelos con la base de datos
 sequelize.sync({ alter: true }) // `alter: true` actualizará la base de datos para reflejar los modelos
